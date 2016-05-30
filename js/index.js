@@ -6,8 +6,8 @@ $(document).ready(function () {
     //hide contact form on page load
     $('.contactDetails').hide();
 
-    $('#addSign').on('click', function () {
-        $('#addSign').hide();
+    $('.addSign').on('click', function () {
+        $('.addSign').hide();
         $('.contactDetails').show();
     })
 
