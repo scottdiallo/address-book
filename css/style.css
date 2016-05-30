@@ -30,5 +30,29 @@ saveBtn {}
 /*html auto capitalize is not workin :(*/
 
 input {
-    text-transform: capitalize
+    text-transform: capitalize;
+    height: 30px;
+    width: 250px;
+    font-size: 1.5em;
+    font-weight: 400;
+    padding: 6px;
+    margin-top: 5px;
+    border-radius: 8px;
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.saveBtn {
+    padding: 10px 30px;
+    font-size: 1.5em;
+    border-radius: 6px;
+    margin: 5px 20px;
+    background-color: black;
+    color: orangered;
+    outline: none;
 }
