@@ -60,7 +60,20 @@ $(document).ready(function () {
         $(".locationE").hide();
     });
 
-    // work on aligning input name with field
+    //capturing user input and and displaying them
+
+    $('.saveBtn').on('click', function () {
+        $('input').val().append('#displayContact');
+    });
+
+    //
+    //    $('input').val()
+    //
+    //    function ({
+    //        $('#displayContact').appendTo('input');
+    //    })
+
+
     //implement attachment && display user contact on dom
 
 

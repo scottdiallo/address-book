@@ -17,10 +17,10 @@
         <form class="contactDetails">
 
             <p class="firstNameE formAttr">First Name:</p>
-            <input class="firstName" type="text">
+            <input class="firstName" type="text" name="username" required>
             </br>
             <p class="lastNameE formAttr">Last Name:</p>
-            <input class="lastName " type="text">
+            <input class="lastName " type="text" name="username" required>
             </br>
             <p class="phoneNumberE formAttr">Phone Number:</p>
 
@@ -32,7 +32,7 @@
             </br>
             <p class="gitHubE formAttr">Github Url:</p>
 
-            <input class="gitHub" type="text">
+            <input class="gitHub" type="url" name="username" required>
             </br>
             <p class="locationE formAttr">Location:</p>
 
@@ -46,6 +46,7 @@
             </br>
             <button class="saveBtn">Save</button>
         </form>
+        <div id="displayContact">My Contacts</div>
 
 
 
