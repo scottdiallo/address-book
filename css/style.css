@@ -4,9 +4,10 @@ html {
 
 .hero-title {
     text-align: center;
-    font-size: 3em;
+    font-size: 3.5em;
     font-weight: 400;
     color: white;
+    letter-spacing: 5px;
 }
 
 .container {
@@ -15,8 +16,6 @@ html {
 
 .addSign {
     font-size: 5em;
-    /*    float: right;
-    */
     position: relative;
     margin-top: -5%;
     margin-left: 18%;
@@ -55,4 +54,12 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: black;
     color: orangered;
     outline: none;
+}
+
+.formAttr {
+    display: inline;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: white
 }
