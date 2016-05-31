@@ -2,7 +2,6 @@
 // Global variables declartions
 
 $(document).ready(function () {
-    //    console.log('hi');
     console.log('hello world');
     //hide contact form on page load
     $('.contactDetails').hide();
@@ -13,14 +12,14 @@ $(document).ready(function () {
     })
 
     //function show field name when on focus andhide when blur
-    $(".focusEvent").hide();
+    $(".firstNameE").hide();
 
-    $("input").focus(function () {
-        $(".focusEvent").show();
-    })
-
-    $("input").blur(function () {
-        $(".focusEvent").hide();
+    $(".firstName").focus(function () {
+            $(".firstNameE").show();
+        })
+        //    console.log('hi');
+    $(".firstName").blur(function () {
+        $(".firstNameE").hide();
     });
 
 });
