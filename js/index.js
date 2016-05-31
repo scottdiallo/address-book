@@ -60,4 +60,8 @@ $(document).ready(function () {
         $(".locationE").hide();
     });
 
+    // work on aligning input name with field
+    //implement attachment && display user contact on dom
+
+
 });
