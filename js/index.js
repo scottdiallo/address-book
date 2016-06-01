@@ -61,57 +61,53 @@ $(document).ready(function () {
     });
 
     //capturing user input and and displaying them
+    var userInput = $('input').val();
+    console.log(userInput);
 
-    $('.saveBtn').on('click', function () {
-        $('input').val().append('#displayContact');
-    });
+    //    $('.saveBtn').on('click', function () {
+    //        $('input').val().append('#displayContact');
+    //    });
 
-    //
-    //    $('input').val()
-    //
-    //    function ({
-    //        $('#displayContact').appendTo('input');
-    //    })
 
 
     //implement attachment && display user contact on dom
 
-//sample code
+    //sample code
     // btn variables
-//    var addBtn = document.getElementById('addBtn');
-//    var saveBtn = document.getElementById('saveBtn');
-//    var clearForm = document.getElementById('clearForm');
-//    var addressBookDisplay = document.querySelector('.addressBookDisplay');
-//
-//    //input field
-//    var firstName = document.getElementById('firstName');
-//    var lastName = document.getElementById('lastName');
-//    var number = document.getElementById('number');
-//    var email = document.getGetElementById('email');
-//    var gitHub = document.getElementById('gitHub');
-//    var location = document.getElementById('location');
-//    var profilePic = document.getElementById('profilePic');
-//    //address book display
-//    var addressBookDisplay = document.querySelector('.addressBookDisplay');
-//
-//    // create an array to hold all input from user
-//    var addressBook = [];
-//
-//    function jsonStructure(firstName, lastName, number, email, email, gitHub, location, profilePic) {
-//        this.firstName = firstName;
-//        this.lastName = lastName;
-//        this.number = number;
-//        this.email = email;
-//        this.gitHub = gitHub;
-//        this.location = location;
-//        this.profilePic = profilePic;
-//
-//        var obj = new jsonStructure(firstName.value, lastName.value, number.value, email.value, gitHub.value, location.value, profilePic.value);
-//        addressBook.push(obj);
-//        localStorage['addBook'] = JSON.stringify(addressBook); //local storage built into the browser, local str only take ''
-//    }
-//
-//    $('.saveBtn').on('click', function (addressToBook) {
-//
-//    })
+    //    var addBtn = document.getElementById('addBtn');
+    //    var saveBtn = document.getElementById('saveBtn');
+    //    var clearForm = document.getElementById('clearForm');
+    //    var addressBookDisplay = document.querySelector('.addressBookDisplay');
+    //
+    //    //input field
+    //    var firstName = document.getElementById('firstName');
+    //    var lastName = document.getElementById('lastName');
+    //    var number = document.getElementById('number');
+    //    var email = document.getGetElementById('email');
+    //    var gitHub = document.getElementById('gitHub');
+    //    var location = document.getElementById('location');
+    //    var profilePic = document.getElementById('profilePic');
+    //    //address book display
+    //    var addressBookDisplay = document.querySelector('.addressBookDisplay');
+    //
+    //    // create an array to hold all input from user
+    //    var addressBook = [];
+    //
+    //    function jsonStructure(firstName, lastName, number, email, email, gitHub, location, profilePic) {
+    //        this.firstName = firstName;
+    //        this.lastName = lastName;
+    //        this.number = number;
+    //        this.email = email;
+    //        this.gitHub = gitHub;
+    //        this.location = location;
+    //        this.profilePic = profilePic;
+    //
+    //        var obj = new jsonStructure(firstName.value, lastName.value, number.value, email.value, gitHub.value, location.value, profilePic.value);
+    //        addressBook.push(obj);
+    //        localStorage['addBook'] = JSON.stringify(addressBook); //local storage built into the browser, local str only take ''
+    //    }
+    //
+    //    $('.saveBtn').on('click', function (addressToBook) {
+    //
+    //    })
 });
