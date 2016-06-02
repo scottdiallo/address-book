@@ -11,7 +11,7 @@ $(document).ready(function () {
         $('.contactDetails').show();
     })
 
-    //function show field name when on focus andhide when blur
+    //function show field name when on ocus andhide when blur
     $(".firstNameE").hide();
     $(".firstName").focus(function () {
         $(".firstNameE").show();
@@ -62,7 +62,17 @@ $(document).ready(function () {
 
     //capturing user input and and displaying them
     var userInput = $('input').val();
-    console.log(userInput);
+    $('.saveBtn').on('click', function () {
+        $('#displayContact').append(userInput);
+    })
+
+
+
+
+
+
+
+
 
     //    $('.saveBtn').on('click', function () {
     //        $('input').val().append('#displayContact');
