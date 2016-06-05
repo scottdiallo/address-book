@@ -61,11 +61,36 @@ $(document).ready(function () {
     });
 
     //capturing user input and and displaying them
-    var userInput = $('input').val();
-    $('.saveBtn').on('click', function () {
-        $('#displayContact').append(userInput);
-    })
+    //    $('.saveBtn').on('click', function () {
+    //        $('#displayContact').append('<li></li>');
+    //    })
 
+    // prevent from reloading
+    $('form').submit(function (event) {
+        event.preventDefault();
+        var userFirstName = $('.firstName').val();
+        var userLastName = $('.lastName').val();
+        var userPhoneNbr = $('.phoneNbr').val();
+        var useremail = $('.email').val();
+        var userGitHub = $('.gitHub').val();
+        var userLocation = $('.location').val();
+        var output = '';
+
+
+        output += "<ul>";
+        output += "<li><b>First Name: </b>" + userFirstName;
+        output += "<li><b>Last Name: </b>" + userLastName + "</li>";
+        output += "<li><b>Phone Number:</b> " + userPhoneNbr + "</li>";
+        output += "<li><b>Email: </b>" + useremail + "</li>";
+        output += "<li><b>GitHub link: </b>" + userGitHub + "</li>";
+        output += "<li><b>Location: </b>" + userLocation + "</li>";
+        output += "</ul>";
+        output += "</li>";
+        output += "<br>";
+
+
+        $('.listOfContact').append(output);
+    })
 
 
 

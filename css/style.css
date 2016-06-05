@@ -2,7 +2,8 @@ html {
     background-color: orangered;
 }
 
-.hero-title {
+.hero-title,
+#displayContact {
     text-align: center;
     font-size: 3.5em;
     font-weight: 400;
@@ -62,6 +63,24 @@ input[type=number]::-webkit-outer-spin-button {
     font-weight: bold;
     letter-spacing: 3px;
     color: white
+}
+
+.listOfContact,
+.listOfContact li {
+    color: white;
+    list-style-type: none;
+    text-align: left;
+    padding: 5px;
+    /*    font-size: 1.2em;
+    */
+    line-height: 1em;
+}
+
+.listOfContact {
+    width: 27%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black
 }
 
 
