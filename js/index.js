@@ -60,15 +60,10 @@ $(document).ready(function () {
         $(".locationE").hide();
     });
 
-    //capturing user input and and displaying them
-    //    $('.saveBtn').on('click', function () {
-    //        $('#displayContact').append('<li></li>');
-    //    })
-
     // prevent from reloading
     $('form').submit(function (event) {
-
         event.preventDefault();
+
         //capturing value from input field
         var userFirstName = $('.firstName').val();
         var userLastName = $('.lastName').val();
@@ -98,11 +93,6 @@ $(document).ready(function () {
         });
 
     })
-
-
-
-
-
 
 
 
