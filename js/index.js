@@ -72,26 +72,22 @@ $(document).ready(function () {
         var userGitHub = $('.gitHub').val();
         var userLocation = $('.location').val();
         var output = '';
-        var outputFirstName = '';
 
         //appending value to DOM
-        outputFirstName += '<br>' + '<b>' + userFirstName + '</b>' + '</br>';
 
-        output += "<ul>";
         output += "<li><b>First Name: </b>" + userFirstName;
-        output += "<li><b>Last Name: </b>" + userLastName + "</li>";
+        output += "<ul><li><b>Last Name: </b>" + userLastName + "</li>";
         output += "<li><b>Phone Number:</b> " + userPhoneNbr + "</li>";
         output += "<li><b>Email: </b>" + useremail + "</li>";
         output += "<li><b>GitHub link: </b>" + userGitHub + "</li>";
         output += "<li><b>Location: </b>" + userLocation + "</li>";
         output += "</ul>";
         output += "</li>";
-        output += "<br>"
 
-        $('.displayContact').append(outputFirstName);
+
         $('.listOfContact').append(output);
 
-        $('.listOfContact').hide(); //hide contact details on output
+        $('.listOfContact ul ').hide(); //hide contact details on output
 
         //this reset the form on submit
         $('form').each(function () {
@@ -103,11 +99,11 @@ $(document).ready(function () {
         //            $('.listOfContact').show();
         //
         //        })
-        $('.displayContact').click(function () {
-            $('.listOfContact').show();
+        $('.listOfContact > li').click(function () {
+            $(this).children().show();
         })
-        $('.listOfContact').mouseleave(function () {
-            $('.listOfContact').hide();
+        $('.listOfContact  ul ').click(function () {
+            $(this).children().hide();
         })
 
 
