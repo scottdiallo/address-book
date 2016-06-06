@@ -1,15 +1,7 @@
 'use strict'
-// Global variables declartions
 
 $(document).ready(function () {
-    console.log('hello world');
-    //hide contact form on page load
-    //    $('.contactDetails').hide();
-
-    //    $('.addSign').on('click', function () {
-    //        $('.addSign').hide();
-    //        $('.contactDetails').show();
-    //    })
+    //    console.log('hello world');
 
     //function show field name when on ocus andhide when blur
     $(".firstNameE").hide();
@@ -94,11 +86,8 @@ $(document).ready(function () {
             this.reset();
         });
 
-        //on click should show contact details
-        //        $('.displayContact').on('click', function () {
-        //            $('.listOfContact').show();
-        //
-        //        })
+        //on click should show / hide contact details
+
         $('.listOfContact > li').click(function () {
             $(this).children().show();
         })
