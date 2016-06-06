@@ -25,8 +25,6 @@ html {
 
 .contactDetails {}
 
-saveBtn {}
-
 .displayContact {
     font-size: 1.5em;
 }
@@ -39,7 +37,7 @@ input {
     height: 30px;
     width: 250px;
     font-size: 1.5em;
-    font-weight: 400;
+    font-weight: 300;
     padding: 6px;
     margin-top: 5px;
     border-radius: 8px;
