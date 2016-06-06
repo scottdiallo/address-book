@@ -74,6 +74,8 @@ $(document).ready(function () {
         var output = '';
 
         //appending value to DOM
+        output += "<li><b>First Name: </b>" + userFirstName;
+
         output += "<ul>";
         output += "<li><b>First Name: </b>" + userFirstName;
         output += "<li><b>Last Name: </b>" + userLastName + "</li>";
@@ -83,17 +85,30 @@ $(document).ready(function () {
         output += "<li><b>Location: </b>" + userLocation + "</li>";
         output += "</ul>";
         output += "</li>";
-        output += "<br>";
+        output += "<br>"
 
         $('.listOfContact').append(output);
+        //        $('form').submit(function () {
+        //            $('.listOfContact').hide();
+        //        })
+        //        console.log('hey');
 
+        $('.listOfContact').hide();
         //this reset the form on submit
         $('form').each(function () {
             this.reset();
         });
 
-    })
+        $('#displayContact').on('click', function () {
+            $('.listOfContact').show();
+
+        })
 
 
+    });
 
+    //
+    //    $('#displayContact').on('click', function () {
+    //        this.contactDetails.show([]);
+    //    });
 });
