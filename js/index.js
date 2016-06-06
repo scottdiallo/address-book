@@ -4,12 +4,12 @@
 $(document).ready(function () {
     console.log('hello world');
     //hide contact form on page load
-    $('.contactDetails').hide();
+    //    $('.contactDetails').hide();
 
-    $('.addSign').on('click', function () {
-        $('.addSign').hide();
-        $('.contactDetails').show();
-    })
+    //    $('.addSign').on('click', function () {
+    //        $('.addSign').hide();
+    //        $('.contactDetails').show();
+    //    })
 
     //function show field name when on ocus andhide when blur
     $(".firstNameE").hide();
@@ -99,10 +99,17 @@ $(document).ready(function () {
         });
 
         //on click should show contact details
-        $('.displayContact').on('click', function () {
+        //        $('.displayContact').on('click', function () {
+        //            $('.listOfContact').show();
+        //
+        //        })
+        $('.displayContact').hover(function () {
             $('.listOfContact').show();
-
         })
+        $('.displayContact').mouseleave(function () {
+            $('.listOfContact').hide();
+        })
+
 
     });
 
