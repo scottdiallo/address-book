@@ -72,9 +72,10 @@ $(document).ready(function () {
         var userGitHub = $('.gitHub').val();
         var userLocation = $('.location').val();
         var output = '';
+        var outputFirstName = '';
 
         //appending value to DOM
-        output += "<li><b>First Name: </b>" + userFirstName;
+        outputFirstName += '<br>' + '<b>' + userFirstName + '</b>' + '</br>';
 
         output += "<ul>";
         output += "<li><b>First Name: </b>" + userFirstName;
@@ -87,28 +88,22 @@ $(document).ready(function () {
         output += "</li>";
         output += "<br>"
 
+        $('.displayContact').append(outputFirstName);
         $('.listOfContact').append(output);
-        //        $('form').submit(function () {
-        //            $('.listOfContact').hide();
-        //        })
-        //        console.log('hey');
 
-        $('.listOfContact').hide();
+        $('.listOfContact').hide(); //hide contact details on output
+
         //this reset the form on submit
         $('form').each(function () {
             this.reset();
         });
 
-        $('#displayContact').on('click', function () {
+        //on click should show contact details
+        $('.displayContact').on('click', function () {
             $('.listOfContact').show();
 
         })
 
-
     });
 
-    //
-    //    $('#displayContact').on('click', function () {
-    //        this.contactDetails.show([]);
-    //    });
 });

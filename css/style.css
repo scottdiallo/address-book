@@ -3,7 +3,7 @@ html {
 }
 
 .hero-title,
-#displayContact {
+.displayContactHeader {
     text-align: center;
     font-size: 3.5em;
     font-weight: 400;
@@ -20,11 +20,16 @@ html {
     position: relative;
     margin-top: -5%;
     margin-left: 18%;
+    cursor: pointer;
 }
 
 .contactDetails {}
 
 saveBtn {}
+
+.displayContact {
+    font-size: 1.5em;
+}
 
 
 /*html auto capitalize is not workin :(*/
