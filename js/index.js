@@ -95,7 +95,7 @@ $(document).ready(function () {
             $(this).children().hide();
         })
 
-
+        // display contact on a separate column for proper view
     });
 
 });
