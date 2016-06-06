@@ -103,10 +103,10 @@ $(document).ready(function () {
         //            $('.listOfContact').show();
         //
         //        })
-        $('.displayContact').hover(function () {
+        $('.displayContact').click(function () {
             $('.listOfContact').show();
         })
-        $('.displayContact').mouseleave(function () {
+        $('.listOfContact').mouseleave(function () {
             $('.listOfContact').hide();
         })
 
